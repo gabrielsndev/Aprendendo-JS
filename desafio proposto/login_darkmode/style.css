@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    background-image: url(img/dia-empé.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.container{
+    background-color: white;
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    height: 380px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+ul.email{
+    position: relative;
+    list-style: none;
+    top:20%;
+}
+
+
+ul.email > li{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+ul.email > li > input{
+    height:25px;
+    border-radius: 5px;
+}
+    
+ul.senha{
+    position: relative;
+    list-style: none;
+    top: 26%;
+}
+        
+ul.senha > li{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+ul.senha > li > input{
+    height: 25px;
+    border-radius: 5px;
+}
+ 
