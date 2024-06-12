@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+@keyframes trocando {
+    100%{
+        margin-left: 95px ;
+    }
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -16,19 +22,48 @@ body{
 }
 
 .container{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.514);
     position: absolute;
     top: 25vh;
     left: 25vw;
     height: 380px;
-    width: 250px;
+    width: 280px;
     border-radius: 10px;
 }
 
+.caixa{
+    background-color: rgba(134, 134, 134, 0.514);
+    position: relative;
+    margin: auto;
+    top: 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.bola{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+
+.bola:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.boladark{
+    animation: trocando 1s forwards;
+}
+
 ul.email{
+    margin: auto;
     position: relative;
     list-style: none;
-    top:20%;
+    top:25%;
 }
 
 
@@ -38,14 +73,16 @@ ul.email > li{
     font-weight: 500;
 }
 ul.email > li > input{
+    background-color: rgba(255, 255, 255, 0.514);
     height:25px;
     border-radius: 5px;
 }
     
 ul.senha{
+    margin: auto;
     position: relative;
     list-style: none;
-    top: 26%;
+    top: 33%;
 }
         
 ul.senha > li{
@@ -55,7 +92,27 @@ ul.senha > li{
 }
 
 ul.senha > li > input{
+    background-color: rgba(255, 255, 255, 0.514);
     height: 25px;
     border-radius: 5px;
 }
- 
+
+.butao{
+    text-align: center;
+    font-size: 1.4em;
+    position: relative;
+    top: 50%;
+    margin: auto;
+    width: 120px;
+    height: 55px;
+    background-color: aqua;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.butao:hover{
+    height: 60px;
+    width: 125px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
