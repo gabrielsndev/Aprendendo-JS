@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
     <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
 </head>
-<body>
+<body class="body bodylight">
     <div class="container">
         <div class="caixa">
-            <div class="bola"></div>
+            <div class="bola" onclick="darkMode()"></div>
         </div>
 
         <ul class="email">
             <li>
-                <p><label for="iemal">Email:</label></p>
+                <p class="pemail"><label for="iemal">Email:</label></p>
             </li>
             <li>
                 <input type="email" name="email" id="iemal">
@@ -23,7 +23,7 @@
         </ul>
         <ul class="senha">
             <li>
-                <p><label for="isen">Senha:</label></p>
+                <p class="psenha"><label for="isen">Senha:</label></p>
             </li>
     
             <li>

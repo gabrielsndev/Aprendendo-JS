@@ -6,6 +6,15 @@
     }
 }
 
+@keyframes voltando {
+    0%{
+        margin-left: 110px;
+    }100%{
+        margin-left: 5px;
+    }
+}
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -15,11 +24,21 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
-    background-image: url(../img/dia-empé.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
+    height: 100vh;
+    transition: 1s;
 }
+
+.bodylight{
+    background-image: url(../img/dia-empé.jpg);
+}
+
+.bodydark{
+    background-image: url(../img/noite-empé.jpg);
+}
+
 
 .container{
     background-color: rgba(255, 255, 255, 0.514);
@@ -29,6 +48,7 @@ body{
     height: 380px;
     width: 280px;
     border-radius: 10px;
+    transition: 1s;
 }
 
 .caixa{
@@ -48,12 +68,18 @@ body{
     position: relative;
     margin-left: 5px;
     border-radius: 50px;
+    transition: 1s;
 }
 
 .bola:hover{
     cursor: pointer;
     background-color: black;
 }
+
+.bolalight{
+    animation: voltando 1s forwards;
+}
+
 
 .boladark{
     animation: trocando 1s forwards;
@@ -71,6 +97,8 @@ ul.email > li{
     display: inline-block;
     font-size: 1.1em;
     font-weight: 500;
+    transition: 1s;
+
 }
 ul.email > li > input{
     background-color: rgba(255, 255, 255, 0.514);
@@ -89,6 +117,7 @@ ul.senha > li{
     display: inline-block;
     font-size: 1.1em;
     font-weight: 500;
+    transition: 1s;
 }
 
 ul.senha > li > input{
