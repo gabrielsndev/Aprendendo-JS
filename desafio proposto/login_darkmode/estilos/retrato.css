@@ -94,12 +94,13 @@ ul.email{
 
 
 ul.email > li{
+    margin-left: 2px;
     display: inline-block;
     font-size: 1.1em;
     font-weight: 500;
     transition: 1s;
-
-}
+    
+    }
 ul.email > li > input{
     background-color: rgba(255, 255, 255, 0.514);
     height:25px;
@@ -111,9 +112,10 @@ ul.senha{
     position: relative;
     list-style: none;
     top: 33%;
-}
-        
+    }
+    
 ul.senha > li{
+    margin-left: 2px;
     display: inline-block;
     font-size: 1.1em;
     font-weight: 500;
